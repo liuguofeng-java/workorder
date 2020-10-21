@@ -5,12 +5,11 @@
 </template>
 
 <script>
-import '../src/assets/css/normalize.css'
 export default {
   
 }
 </script>
 
 <style lang="scss" scoped>
-
+@import '../src/assets/css/common.css';
 </style>

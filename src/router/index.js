@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Index from '../components/Index.vue'
+const Home = r => require.ensure([], () => r(require('../page/home/Home.vue')), 'home')
+
 
 Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    name: 'Index',
-    component: Index
+    name: 'Home',
+    component: Home
 }, ]
 
 const router = new VueRouter({

@@ -2,7 +2,7 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://musicapi.leanapp.cn/',
+                target: 'http://elm.cangdu.org/',
                 // 允许跨域
                 changeOrigin: true,
                 ws: true,
