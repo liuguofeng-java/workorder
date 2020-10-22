@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { Message } from 'element-ui';
 
-axios.defaults.timeout = 5000;
-axios.defaults.baseURL = '/api/v1';
+axios.defaults.timeout = 10000;
+axios.defaults.baseURL = '/api';
 
 
 //http request 拦截器
@@ -13,8 +13,8 @@ axios.interceptors.request.use(
         config.headers = {
                 'Content-Type': 'application/x-www-form-urlencoded'
             }
-            // if(token){
-            //   config.params = {'token':token}
+            // if (token) {
+            //     config.params = { 'token': token }
             // }
         return config;
     },
