@@ -12,4 +12,5 @@ export default {
 
 <style lang="scss" scoped>
 @import '../src/assets/css/common.css';
+@import '../src/assets/font/iconfont.css';
 </style>
