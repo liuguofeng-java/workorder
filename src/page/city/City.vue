@@ -17,40 +17,40 @@
           :key="item.area_code"
           @click="hotClick(itme.name)"
           tag="li"
-          :to="'http://www.baidu.com' + item.id"
+          :to="'/address/' + item.id"
         >
           {{ item.name }}
         </router-link>
       </ul>
     </div>
 
-    <div class="city_list">
-      <div class="city_title">热门城市</div>
+    <div class="city_list" v-for="(item, key, i) in sortGroupCities" :key="item.id">
+      <div class="city_title" v-if="i == 0">{{ key }}(按字母排序)</div>
+      <div class="city_title" v-else>{{ key }}</div>
       <ul class="list_hot">
         <router-link
-          v-for="item in cityHot"
-          :key="item.area_code"
-          @click="hotClick(itme.name)"
+          v-for="i in item"
+          :key="i.id"
           tag="li"
-          :to="'http://www.baidu.com' + item.id"
+          :to="'/address/' + i.id"
         >
-          {{ item.name }}
+          {{ i.name }}
         </router-link>
       </ul>
     </div>
-    
+
   </div>
 </template>
 
 <script>
-import { getHotCities,getGroupCities } from "../../api/city";
+import { getHotCities, getGroupCities } from "../../api/city";
 import { getCity } from "../../api/map";
 export default {
   data() {
     return {
       city: "", //当前城市
-      cityHot: [],
-      GroupCities: [],
+      cityHot: [], //热门城市
+      GroupCities: [], //按字母排序城市
     };
   },
   mounted() {
@@ -70,11 +70,22 @@ export default {
     //按组排序城市
     getGroupCities().then((res) => {
       this.GroupCities = res;
-      console.log(res);
     });
   },
-  methods: {
+  computed: {
+    sortGroupCities() {
+      let sortobj = {};
+      for (let i = 65; i <= 90; i++) {
+        if (this.GroupCities[String.fromCharCode(i)]) {
+          sortobj[String.fromCharCode(i)] = this.GroupCities[
+            String.fromCharCode(i)
+          ];
+        }
+      }
+      return sortobj;
+    },
   },
+  methods: {},
 };
 </script>
 
@@ -142,6 +153,10 @@ export default {
   border-right: 0.025rem solid #e4e4e4;
   box-sizing: border-box;
   font-size: 0.9rem;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .list_hot::after {
   content: "";

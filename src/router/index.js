@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 const City = r => require.ensure([], () => r(require('../page/city/City.vue')), 'city')
+const Address = r => require.ensure([], () => r(require('../page/address/Address.vue')), 'address')
 
 
 Vue.use(VueRouter)
@@ -11,6 +12,13 @@ const routes = [{
     component: City,
     meta: {
         title: '选择城市'
+    },
+}, {
+    path: '/address/:cityId',
+    name: 'Address',
+    component: Address,
+    meta: {
+        title: '选择地址'
     }
 }]
 
