@@ -1,16 +1,7 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <router-view/>
 </template>
 
-<script>
-export default {
-  
-}
-</script>
+<style lang="less">
 
-<style lang="scss" scoped>
-@import '../src/assets/css/common.css';
-@import '../src/assets/font/iconfont.css';
 </style>

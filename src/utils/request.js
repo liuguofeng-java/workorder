@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { Message } from 'element-ui';
+import axios from 'axios'
+
 
 axios.defaults.timeout = 10000;
 axios.defaults.baseURL = '/api';

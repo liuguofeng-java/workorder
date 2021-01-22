@@ -1,20 +1,15 @@
-import Vue from 'vue'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
+import { post, get } from './utils/request'
 
-// ajax
-import { post, get, patch, put } from './util/http'
-Vue.prototype.$post = post;
-Vue.prototype.$get = get;
-Vue.prototype.$patch = patch;
-Vue.prototype.$put = put;
 
-Vue.config.productionTip = false
-Vue.use(ElementUI);
+const app = createApp({})
+get('/index').then((res)=>{
+  console.log(res);
+})
+app.config.globalProperties.post = post;
+app.config.globalProperties.get = get;
 
-new Vue({
-    router,
-    render: function (h) { return h(App) }
-}).$mount('#app')
+createApp(App).use(store).use(router).mount('#app')
