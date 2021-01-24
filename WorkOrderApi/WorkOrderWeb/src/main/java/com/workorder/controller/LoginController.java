@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <p>
@@ -72,7 +74,11 @@ public class LoginController {
             if(!setToken || !wosUserService.updateUserById(userInfo)){
                 return ResultCode.error("登录失败");
             }
-            return ResultCode.success("获取成功",token);
+            
+            Map<String,Object> map = new HashMap<>();
+            map.put("token",token);
+            map.put("userInfo",userInfo);
+            return ResultCode.success("登录成功",map);
         }
     }
 }

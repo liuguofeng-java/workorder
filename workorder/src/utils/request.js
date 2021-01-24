@@ -51,10 +51,10 @@ const ajax = (url, params = {}, method) => {
       data: Qs.stringify(params)
     })
       .then((res) => {
-        resolve(res)
+        resolve(res.data)
       })
       .catch((error) => {
-        reject(error)
+        reject(getError(error))
       })
   })
 }
