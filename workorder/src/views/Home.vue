@@ -89,6 +89,7 @@
 </template>
 
 <script>
+import { test } from "../api/home";
 export default {
   methods: {
     handleOpen(key, keyPath) {
@@ -97,6 +98,9 @@ export default {
     handleClose(key, keyPath) {
       console.log(key, keyPath);
     },
+  },
+  created() {
+    test();
   },
 };
 </script>

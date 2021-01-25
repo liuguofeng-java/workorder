@@ -1,9 +1,51 @@
 import axios from 'axios'
+import router from '../router/index'
 import Qs from 'qs'
 
 axios.defaults.timeout = 10000
 axios.defaults.baseURL = '/api'
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+
+
+
+//http request 封装请求头拦截器
+
+axios.interceptors.request.use(
+  config => {
+    config.headers = {
+      'Content-Type':'application/x-www-form-urlencoded'
+    }
+    var token = localStorage.getItem('token');
+    if(token != ''){
+     config.headers.token = token;
+    }
+    return config;
+  },
+  error => {
+    return Promise.reject(err);
+  }
+);
+
+
+//http response 封装后台返回拦截器
+
+axios.interceptors.response.use(
+  response => {
+    //当返回信息为未登录或者登录失效的时候重定向为登录页面
+    if(response.data.code === 400){
+      router.push({
+        path:"/login",
+        querry:{redirect:router.currentRoute.fullPath}//从哪个页面跳转
+      })
+    }
+    return response;
+  },
+  error => {
+    return Promise.reject(error)
+  }
+
+)
+
 
 /**
  * 封装get方法
@@ -12,7 +54,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
  * @returns {Promise}
  */
 
-export function get (url, params = {}) {
+export function get(url, params = {}) {
   return new Promise((resolve, reject) => {
     ajax(url, params, 'get')
       .then((res) => {
@@ -31,7 +73,7 @@ export function get (url, params = {}) {
  * @returns {Promise}
  */
 
-export function post (url, params = {}) {
+export function post(url, params = {}) {
   return new Promise((resolve, reject) => {
     ajax(url, params, 'post')
       .then((res) => {
@@ -63,7 +105,7 @@ const ajax = (url, params = {}, method) => {
  *
  * @param {错误信息} err
  */
-function getError (err) {
+function getError(err) {
   if (err && err.response) {
     switch (err.response.status) {
       case 400:
@@ -107,3 +149,4 @@ function getError (err) {
   }
   return err.message
 }
+

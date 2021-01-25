@@ -16,13 +16,8 @@ import java.io.InputStream;
 @Controller
 @ResponseBody
 public class TestController {
-
-    @Autowired
-    private WosUserService serService;
-
     @GetMapping("/test")
-    public JsonResult index() throws IOException {
-        serService.getUserInfo("");
+    public JsonResult index() {
         return ResultCode.success("获取成功");
     }
 }

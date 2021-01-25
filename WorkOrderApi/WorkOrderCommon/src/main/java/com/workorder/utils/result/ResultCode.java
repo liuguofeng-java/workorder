@@ -6,12 +6,12 @@ import com.workorder.utils.result.JsonResult;
  * 接口统一返回
  */
 public class ResultCode {
-    private final static String SUCCESS_STATUS="success";
-    private final static String ERROR_STATUS="error";
+    public final static String SUCCESS_STATUS="success";
+    public final static String ERROR_STATUS="error";
 
-    private final static int ERROR_CODE=500;//服务器异常
-    private final static int SUCCESS_CODE=200;//请求成功
-    private final static int NOT_LOGIN_CODE=400;//未登录
+    public final static int ERROR_CODE=500;//服务器异常
+    public final static int SUCCESS_CODE=200;//请求成功
+    public final static int NOT_LOGIN_CODE=400;//未登录
 
     public static JsonResult success(String message, Object data){
         return new JsonResult(SUCCESS_CODE,SUCCESS_STATUS,message,data);
@@ -20,8 +20,8 @@ public class ResultCode {
         return new JsonResult(SUCCESS_CODE,SUCCESS_STATUS,message,null);
     }
 
-    public static JsonResult error(String message,Object data){
-        return new JsonResult(SUCCESS_CODE,ERROR_STATUS,message,data);
+    public static JsonResult error(int code,String message){
+        return new JsonResult(code,ERROR_STATUS,message,null);
     }
 
     public static JsonResult error(String message){
