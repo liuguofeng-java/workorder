@@ -1,0 +1,4 @@
+2021-01-25 12:53:45.431 INFO [main] com.workorder.logTest : Starting logTest on DESKTOP-KD2CNJ0 with PID 28876 (started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb)
+2021-01-25 12:53:45.434 INFO [main] com.workorder.logTest : No active profile set, falling back to default profiles: default
+2021-01-25 12:53:49.782 INFO [main] com.workorder.logTest : Started logTest in 4.658 seconds (JVM running for 6.901)
+2021-01-25 12:53:50.057 INFO [main] com.workorder.logTest : 测试
