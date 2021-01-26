@@ -33,6 +33,7 @@ axios.interceptors.response.use(
   response => {
     //当返回信息为未登录或者登录失效的时候重定向为登录页面
     if(response.data.code === 400){
+      localStorage.removeItem('token');
       router.push({
         path:"/login",
         querry:{redirect:router.currentRoute.fullPath}//从哪个页面跳转

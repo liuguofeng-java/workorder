@@ -1,8 +1,16 @@
-2021-01-26 12:54:58.146 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-KD2CNJ0 with PID 3080 (C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi)
-2021-01-26 12:54:58.156 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
-2021-01-26 12:54:59.617 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
-2021-01-26 12:54:59.618 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
-2021-01-26 12:54:59.618 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2021-01-26 12:54:59.703 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
-2021-01-26 12:55:01.410 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
-2021-01-26 12:55:01.433 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 3.655 seconds (JVM running for 5.662)
+2021-01-26 20:12:50.815 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-1PRNDI5 with PID 10860 (C:\Users\Lenovo\Desktop\workorder-project\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder-project\WorkOrderApi)
+2021-01-26 20:12:50.945 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
+2021-01-26 20:12:56.936 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
+2021-01-26 20:12:56.946 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-01-26 20:12:56.946 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-01-26 20:12:57.236 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-01-26 20:13:03.395 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
+2021-01-26 20:13:03.455 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 13.705 seconds (JVM running for 21.949)
+2021-01-26 20:13:21.872 INFO [http-nio-8888-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 21:10:47.556 INFO [http-nio-8888-exec-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-01-26 21:10:51.798 INFO [http-nio-8888-exec-7] com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (This operation is not supported.)
+2021-01-26 21:10:51.954 INFO [http-nio-8888-exec-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-01-26 21:10:53.561 INFO [http-nio-8888-exec-7] io.lettuce.core.EpollProvider : Starting without optional epoll library
+2021-01-26 21:10:53.573 INFO [http-nio-8888-exec-7] io.lettuce.core.KqueueProvider : Starting without optional kqueue library
+2021-01-26 22:34:44.412 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-01-26 22:34:44.498 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
