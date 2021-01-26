@@ -30,18 +30,4 @@ public class MyControllerAdvice {
         return ResultCode.error("系统错误");
     }
 
-//    /**
-//     * 拦截捕捉自定义异常 MyException.class
-//     * @param ex
-//     * @return
-//     */
-//    @ResponseBody
-//    @ExceptionHandler(value = MyException.class)
-//    public Map myErrorHandler(MyException ex) {
-//        Map map = new HashMap();
-//        map.put("code", ex.getCode());
-//        map.put("msg", ex.getMsg());
-//        return map;
-//    }
-
 }

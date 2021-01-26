@@ -1,22 +1,34 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+let Login = () => import('../views/Login.vue');
+let Home = () => import('../views/Home.vue');
 
 
+let error404 = () => import('../views/404.vue');
 // 要告诉 vue 使用 vueRouter
 Vue.use(VueRouter);
 
 const routes = [
   {
+    path: '/',
+    redirect: '/login'
+  },
+  {
     path: '/login',
     name: 'Login',
-    component: () => import('../views/Login.vue'),
-    meta:{title:'登录'}
+    component: Login,
+    meta: { title: '登录' }
   },
   {
     path: '/home',
     name: 'Home',
-    component: () => import('../views/Home.vue'),
-    meta:{title:'主页'}
+    component: Home,
+    meta: { title: '主页' }
+  },
+  {
+    path: '*',
+    component: error404,
+    meta: { title: '找不到页面' }
   }
 ]
 
@@ -31,4 +43,5 @@ router.beforeEach((to, from, next) => {
   }
   next();
 })
+
 export default router;

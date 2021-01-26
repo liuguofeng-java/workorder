@@ -84,7 +84,10 @@ export default {
                 type: "success",
               });
               //保持服务器数据
-              localStorage.setItem("token", res.data.token);
+              let isLogin = { isLogin: true };
+              localStorage.setItem("isLogin", JSON.stringify(isLogin));//是否登录
+              localStorage.setItem("token", res.data.token);//token
+              //用户数据
               localStorage.setItem(
                 "userInfo",
                 JSON.stringify(res.data.userInfo)
@@ -116,7 +119,7 @@ export default {
 <style lang="less">
 .main-container {
   width: 500px;
-  height:200px;
+  height: 200px;
   border: solid 1px #7777;
   position: absolute;
   left: 50%;

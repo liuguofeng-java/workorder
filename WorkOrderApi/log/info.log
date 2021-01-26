@@ -407,3 +407,42 @@ java.lang.NullPointerException: null
 2021-01-25 21:44:13.989 INFO [http-nio-8888-exec-10] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
 2021-01-25 21:48:04.373 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
 2021-01-25 21:48:04.379 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-01-26 12:35:55.215 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-KD2CNJ0 with PID 9368 (C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi)
+2021-01-26 12:35:55.231 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
+2021-01-26 12:35:57.132 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:35:57.133 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-01-26 12:35:57.134 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-01-26 12:35:57.222 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:35:59.205 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:35:59.238 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 4.517 seconds (JVM running for 8.121)
+2021-01-26 12:42:09.767 INFO [http-nio-8888-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 12:42:09.905 INFO [http-nio-8888-exec-2] io.lettuce.core.EpollProvider : Starting without optional epoll library
+2021-01-26 12:42:09.907 INFO [http-nio-8888-exec-2] io.lettuce.core.KqueueProvider : Starting without optional kqueue library
+2021-01-26 12:42:10.757 ERROR[http-nio-8888-exec-2] com.workorder.config.MyControllerAdvice : org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2021-01-26 12:43:55.590 ERROR[http-nio-8888-exec-4] com.workorder.config.MyControllerAdvice : org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2021-01-26 12:43:55.597 ERROR[http-nio-8888-exec-1] com.workorder.config.MyControllerAdvice : org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2021-01-26 12:43:55.601 ERROR[http-nio-8888-exec-3] com.workorder.config.MyControllerAdvice : org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2021-01-26 12:46:51.817 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-KD2CNJ0 with PID 10696 (C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi)
+2021-01-26 12:46:51.838 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
+2021-01-26 12:46:53.425 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:46:53.426 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-01-26 12:46:53.427 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-01-26 12:46:53.514 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:46:55.270 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:46:55.292 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 4.227 seconds (JVM running for 6.54)
+2021-01-26 12:47:03.524 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-KD2CNJ0 with PID 1292 (C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi)
+2021-01-26 12:47:03.536 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
+2021-01-26 12:47:04.980 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:47:04.981 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-01-26 12:47:04.982 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-01-26 12:47:05.063 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:47:06.741 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:47:06.763 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 3.583 seconds (JVM running for 5.75)
+2021-01-26 12:54:58.146 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-KD2CNJ0 with PID 3080 (C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi)
+2021-01-26 12:54:58.156 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
+2021-01-26 12:54:59.617 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:54:59.618 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-01-26 12:54:59.618 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-01-26 12:54:59.703 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:55:01.410 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
+2021-01-26 12:55:01.433 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 3.655 seconds (JVM running for 5.662)
