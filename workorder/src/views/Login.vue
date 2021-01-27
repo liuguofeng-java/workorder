@@ -27,12 +27,23 @@
         >
       </el-form-item>
     </el-form>
+    <img :src="codeImg">
   </div>
 </template>
 
 <script>
-import { register } from "../api/login";
+import { register ,getVerifyCode} from "../api/login";
 export default {
+  created(){
+    //获取验证码
+    getVerifyCode().then((res)=>{
+      let blob = new Blob([res])
+      let src = window.URL.createObjectURL(blob);
+      this.codeImg = src
+
+      
+    })
+  },
   data() {
     var validateUserName = (rule, value, callback) => {
       if (value === "") {
@@ -54,6 +65,7 @@ export default {
     };
     return {
       loading: false,
+      codeImg:'',
       ruleForm: {
         username: "",
         password: "",

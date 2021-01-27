@@ -13,7 +13,7 @@ public class WebConfigurer implements WebMvcConfigurer {
         // 拦截所有请求，通过判断是否有
         registry.addInterceptor(LoginInterceptor())
                 .addPathPatterns("/**")
-                .excludePathPatterns("/login/tokenLogin");
+                .excludePathPatterns("/login/tokenLogin","/login/getVerifyCode");
     }
 
     @Bean
