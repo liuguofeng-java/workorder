@@ -81,7 +81,7 @@ public class LoginController {
     public JsonResult tokenLogin(String username, String password,String code, HttpServletRequest request){
         String ip = NetworkUtil.getIpAddress(request);
         String reqCode = (String) redisUtil.get(ip);
-        if(StringUtils.isEmpty(code) || reqCode.equals(code)){
+        if(StringUtils.isEmpty(code) || !reqCode.equals(code)){
             return ResultCode.error("验证码不正确");
         }
         if(StringUtils.isEmpty(username)){

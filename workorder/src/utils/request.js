@@ -28,7 +28,6 @@ axios.interceptors.request.use(
 
 
 //http response 封装后台返回拦截器
-
 axios.interceptors.response.use(
   response => {
     //当返回信息为未登录或者登录失效的时候重定向为登录页面

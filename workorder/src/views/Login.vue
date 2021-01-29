@@ -21,29 +21,31 @@
           autocomplete="off"
         ></el-input>
       </el-form-item>
+      <el-form-item prop="code">
+        <el-col :span="12">
+          <el-input
+            type="text"
+            v-model="ruleForm.code"
+            autocomplete="off"
+            placeholder="验证码"
+          ></el-input>
+        </el-col>
+        <el-col :span="12">
+          <img class="code-img" :src="codeImg" @click="getImgCode()" />
+        </el-col>
+      </el-form-item>
       <el-form-item class="but-container">
         <el-button type="primary" @click="submitForm('ruleForm')"
           >提交</el-button
         >
       </el-form-item>
     </el-form>
-    <img :src="codeImg">
   </div>
 </template>
 
 <script>
-import { register ,getVerifyCode} from "../api/login";
+import { register } from "../api/login";
 export default {
-  created(){
-    //获取验证码
-    getVerifyCode().then((res)=>{
-      let blob = new Blob([res])
-      let src = window.URL.createObjectURL(blob);
-      this.codeImg = src
-
-      
-    })
-  },
   data() {
     var validateUserName = (rule, value, callback) => {
       if (value === "") {
@@ -63,20 +65,30 @@ export default {
         callback();
       }
     };
+    var validateCode = (rule, value, callback) => {
+      if (value.length != 5) {
+        callback(new Error("验证码长度不合法!"));
+      } else {
+        callback();
+      }
+    };
     return {
       loading: false,
-      codeImg:'',
+      codeImg: "/api/login/getVerifyCode",
       ruleForm: {
         username: "",
         password: "",
+        code: "",
       },
       rules: {
         username: [{ validator: validateUserName, trigger: "blur" }],
         password: [{ validator: validatePassword, trigger: "blur" }],
+        code: [{ validator: validateCode, trigger: "blur" }],
       },
     };
   },
   methods: {
+    //提交登录
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         //验证失败
@@ -86,8 +98,9 @@ export default {
         //执行登录
         let username = this.ruleForm.username;
         let password = this.ruleForm.password;
+        let code = this.ruleForm.code;
         this.loading = true;
-        register(username, password)
+        register(username, password,code)
           //成功获取数据
           .then((res) => {
             if (res.status === "success") {
@@ -96,7 +109,7 @@ export default {
                 type: "success",
               });
               //保持服务器数据
-              localStorage.setItem("token", res.data.token);//token
+              localStorage.setItem("token", res.data.token); //token
               //用户数据
               localStorage.setItem(
                 "userInfo",
@@ -106,6 +119,7 @@ export default {
                 this.$router.replace("/home");
               }, 1000);
             } else {
+              this.getImgCode();
               this.$alert(res.message, "提示", {
                 confirmButtonText: "确定",
               });
@@ -121,6 +135,14 @@ export default {
             this.loading = false;
           });
       });
+    },
+    //获取图片
+    getImgCode() {
+      let codeImg = this.codeImg;
+      if (codeImg.indexOf("?") != -1) {
+        codeImg = codeImg.substring(0,codeImg.indexOf("?"));
+      }
+      this.codeImg = `${codeImg}?math=${Math.round(Math.random()*10)}`
     },
   },
 };
@@ -139,5 +161,9 @@ export default {
 }
 .but-container {
   text-align: center;
+}
+.code-img {
+  height: 40px;
+  padding-left: 10px;
 }
 </style>

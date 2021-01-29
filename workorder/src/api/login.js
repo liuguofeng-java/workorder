@@ -19,12 +19,14 @@ export function getVerifyCode() {
  * 登录
  * @param {*} username 用户名
  * @param {*} password 密码
+ * @param {*} code 验证码
  */
-export function register(username, password) {
+export function register(username, password,code) {
   return new Promise((resolve, reject) => {
     const params = {
       username,
-      password
+      password,
+      code
     }
     post('/login/tokenLogin', params)
       .then((res) => {

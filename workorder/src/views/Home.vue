@@ -43,23 +43,102 @@
         <span slot="title">导航四</span>
       </el-menu-item>
     </el-menu>
+
+    <div class="main-container">
+      <!--顶部头像部分-->
+      <div class="nav">
+        <div class="nav-left" @click="collapse">
+          <el-button
+            type="primary"
+            size="mini"
+            icon="el-icon-s-fold"
+          ></el-button>
+        </div>
+        <div class="nav-right"></div>
+      </div>
+
+      <el-tabs
+        v-model="editableTabsValue"
+        type="card"
+        editable
+        @edit="handleTabsEdit"
+        class="tabs"
+      >
+        <el-tab-pane
+          :key="item.name"
+          v-for="item in editableTabs"
+          :label="item.title"
+          :name="item.name"
+        >
+          {{ item.content }}
+        </el-tab-pane>
+      </el-tabs>
+    </div>
   </div>
 </template>
 
 <script>
-import { test } from "../api/home";
 export default {
   data() {
     return {
+      //侧边
       isCollapse: false,
+      //导航
+      editableTabsValue: "2",
+      editableTabs: [
+        {
+          title: "Tab 1",
+          name: "1",
+          content: "Tab 1 content",
+        },
+        {
+          title: "Tab 2",
+          name: "2",
+          content: "Tab 2 content",
+        },
+      ],
+      tabIndex: 2,
     };
   },
   methods: {
+    //侧边
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
     },
     handleClose(key, keyPath) {
       console.log(key, keyPath);
+    },
+    //导航
+    handleTabsEdit(targetName, action) {
+      if (action === "add") {
+        let newTabName = ++this.tabIndex + "";
+        this.editableTabs.push({
+          title: "New Tab",
+          name: newTabName,
+          content: "New Tab content",
+        });
+        this.editableTabsValue = newTabName;
+      }
+      if (action === "remove") {
+        let tabs = this.editableTabs;
+        let activeName = this.editableTabsValue;
+        if (activeName === targetName) {
+          tabs.forEach((tab, index) => {
+            if (tab.name === targetName) {
+              let nextTab = tabs[index + 1] || tabs[index - 1];
+              if (nextTab) {
+                activeName = nextTab.name;
+              }
+            }
+          });
+        }
+        this.editableTabsValue = activeName;
+        this.editableTabs = tabs.filter((tab) => tab.name !== targetName);
+      }
+    },
+    //折叠侧边
+    collapse() {
+      this.isCollapse = !this.isCollapse;
     },
   },
 };
@@ -69,6 +148,7 @@ export default {
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
   min-height: 400px;
+  position: relative;
 }
 .title-container {
   height: 80px;
@@ -78,10 +158,16 @@ export default {
   font-weight: 900;
   color: white;
 }
-.el-menu-vertical-demo  {
+.el-menu-vertical-demo {
   background-color: rgb(73, 78, 143);
   position: absolute;
   bottom: 0;
   top: 0px;
+}
+.main-container {
+}
+.nav {
+  height: 60px;
+  background: #5a5998;
 }
 </style>
