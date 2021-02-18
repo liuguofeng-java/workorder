@@ -1,0 +1,93 @@
+2021-02-09 14:51:17.140 INFO [main] com.workorder.LoginTest : Starting LoginTest on DESKTOP-KD2CNJ0 with PID 20884 (started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb)
+2021-02-09 14:51:17.143 INFO [main] com.workorder.LoginTest : No active profile set, falling back to default profiles: default
+2021-02-09 14:51:21.923 INFO [main] io.lettuce.core.EpollProvider : Starting without optional epoll library
+2021-02-09 14:51:21.925 INFO [main] io.lettuce.core.KqueueProvider : Starting without optional kqueue library
+2021-02-09 14:51:24.464 INFO [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-02-09 14:51:24.505 INFO [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-09 14:51:24.505 INFO [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.2 created.
+2021-02-09 14:51:24.507 INFO [main] org.quartz.simpl.RAMJobStore : RAMJobStore initialized.
+2021-02-09 14:51:24.508 INFO [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-09 14:51:24.509 INFO [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-02-09 14:51:24.509 INFO [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.2
+2021-02-09 14:51:24.510 INFO [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c65d8e3
+2021-02-09 14:51:24.759 INFO [main] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-02-09 14:51:24.768 INFO [main] com.workorder.LoginTest : Started LoginTest in 7.892 seconds (JVM running for 10.489)
+2021-02-09 14:51:25.086 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-02-09 14:51:25.992 INFO [main] com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (This operation is not supported.)
+2021-02-09 14:51:26.036 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-02-09 14:51:26.105 INFO [main] com.workorder.logTest : ≤‚ ‘
+2021-02-09 14:51:26.134 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 14:51:26.135 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-02-09 14:51:26.135 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 14:51:26.136 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-02-09 14:51:26.274 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-02-09 14:51:26.281 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-02-09 14:51:46.849 INFO [main] com.workorder.LoginTest : Starting LoginTest on DESKTOP-KD2CNJ0 with PID 21736 (started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb)
+2021-02-09 14:51:46.853 INFO [main] com.workorder.LoginTest : No active profile set, falling back to default profiles: default
+2021-02-09 14:51:50.812 INFO [main] io.lettuce.core.EpollProvider : Starting without optional epoll library
+2021-02-09 14:51:50.815 INFO [main] io.lettuce.core.KqueueProvider : Starting without optional kqueue library
+2021-02-09 14:51:53.418 INFO [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-02-09 14:51:53.435 INFO [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-09 14:51:53.435 INFO [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.2 created.
+2021-02-09 14:51:53.436 INFO [main] org.quartz.simpl.RAMJobStore : RAMJobStore initialized.
+2021-02-09 14:51:53.437 INFO [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-09 14:51:53.437 INFO [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-02-09 14:51:53.437 INFO [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.2
+2021-02-09 14:51:53.437 INFO [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@144ee8a7
+2021-02-09 14:51:53.758 INFO [main] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-02-09 14:51:53.768 INFO [main] com.workorder.LoginTest : Started LoginTest in 7.182 seconds (JVM running for 9.999)
+2021-02-09 14:51:54.022 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-02-09 14:51:54.867 INFO [main] com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (This operation is not supported.)
+2021-02-09 14:51:54.907 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-02-09 14:51:54.969 INFO [main] com.workorder.logTest : ≤‚ ‘
+2021-02-09 14:51:54.993 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 14:51:54.995 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-02-09 14:51:54.995 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 14:51:54.996 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-02-09 14:51:55.127 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-02-09 14:51:55.140 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-02-09 14:53:10.639 INFO [main] com.workorder.LoginTest : Starting LoginTest on DESKTOP-KD2CNJ0 with PID 21616 (started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb)
+2021-02-09 14:53:10.642 INFO [main] com.workorder.LoginTest : No active profile set, falling back to default profiles: default
+2021-02-09 14:53:14.297 INFO [main] io.lettuce.core.EpollProvider : Starting without optional epoll library
+2021-02-09 14:53:14.299 INFO [main] io.lettuce.core.KqueueProvider : Starting without optional kqueue library
+2021-02-09 14:53:16.714 INFO [main] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-02-09 14:53:16.732 INFO [main] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-09 14:53:16.733 INFO [main] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.2 created.
+2021-02-09 14:53:16.735 INFO [main] org.quartz.simpl.RAMJobStore : RAMJobStore initialized.
+2021-02-09 14:53:16.736 INFO [main] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-09 14:53:16.736 INFO [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-02-09 14:53:16.736 INFO [main] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.2
+2021-02-09 14:53:16.736 INFO [main] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@25cde5bb
+2021-02-09 14:53:16.977 INFO [main] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-02-09 14:53:16.989 INFO [main] com.workorder.LoginTest : Started LoginTest in 6.576 seconds (JVM running for 9.066)
+2021-02-09 14:53:17.271 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-02-09 14:53:18.096 INFO [main] com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (This operation is not supported.)
+2021-02-09 14:53:18.133 INFO [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-02-09 14:53:18.195 INFO [main] com.workorder.logTest : ≤‚ ‘
+2021-02-09 14:53:18.260 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 14:53:18.261 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-02-09 14:53:18.261 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 14:53:18.262 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-02-09 14:53:18.388 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-02-09 14:53:18.392 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.

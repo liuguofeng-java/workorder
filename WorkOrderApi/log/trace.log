@@ -1,11 +1,35 @@
-2021-01-29 12:57:43.397 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-KD2CNJ0 with PID 24192 (C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi)
-2021-01-29 12:57:43.406 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
-2021-01-29 12:57:44.848 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
-2021-01-29 12:57:44.849 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
-2021-01-29 12:57:44.850 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2021-01-29 12:57:44.935 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
-2021-01-29 12:57:46.572 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
-2021-01-29 12:57:46.594 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 3.54 seconds (JVM running for 5.414)
-2021-01-29 12:57:52.323 INFO [http-nio-8888-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-29 12:57:52.602 INFO [http-nio-8888-exec-1] io.lettuce.core.EpollProvider : Starting without optional epoll library
-2021-01-29 12:57:52.604 INFO [http-nio-8888-exec-1] io.lettuce.core.KqueueProvider : Starting without optional kqueue library
+2021-02-09 16:13:22.689 INFO [restartedMain] com.workorder.WorkOrderWebApp : Starting WorkOrderWebApp on DESKTOP-KD2CNJ0 with PID 11984 (C:\Users\Lenovo\Desktop\workorder\WorkOrderApi\WorkOrderWeb\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\workorder\WorkOrderApi)
+2021-02-09 16:13:22.699 INFO [restartedMain] com.workorder.WorkOrderWebApp : No active profile set, falling back to default profiles: default
+2021-02-09 16:13:24.622 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"]
+2021-02-09 16:13:24.623 INFO [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-02-09 16:13:24.624 INFO [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-09 16:13:24.716 INFO [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-02-09 16:13:26.949 INFO [restartedMain] io.lettuce.core.EpollProvider : Starting without optional epoll library
+2021-02-09 16:13:26.950 INFO [restartedMain] io.lettuce.core.KqueueProvider : Starting without optional kqueue library
+2021-02-09 16:13:28.249 INFO [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-09 16:13:28.759 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2021-02-09 16:13:28.773 INFO [restartedMain] org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-09 16:13:28.773 INFO [restartedMain] org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.2 created.
+2021-02-09 16:13:28.774 INFO [restartedMain] org.quartz.simpl.RAMJobStore : RAMJobStore initialized.
+2021-02-09 16:13:28.775 INFO [restartedMain] org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-09 16:13:28.775 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-02-09 16:13:28.775 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.2
+2021-02-09 16:13:28.775 INFO [restartedMain] org.quartz.core.QuartzScheduler : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7c573732
+2021-02-09 16:13:28.849 INFO [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-02-09 16:13:28.862 INFO [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-02-09 16:13:28.892 INFO [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-02-09 16:13:29.044 INFO [restartedMain] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-02-09 16:13:29.050 INFO [restartedMain] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8888"]
+2021-02-09 16:13:29.067 INFO [restartedMain] com.workorder.WorkOrderWebApp : Started WorkOrderWebApp in 6.73 seconds (JVM running for 9.167)
+2021-02-09 16:13:41.683 INFO [http-nio-8888-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 17:32:23.490 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 17:32:23.529 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-02-09 17:32:23.529 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-02-09 17:32:23.530 INFO [SpringContextShutdownHook] org.quartz.core.QuartzScheduler : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.

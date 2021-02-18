@@ -7,6 +7,7 @@ import com.workorder.utils.result.JsonResult;
 import com.workorder.utils.result.ResultCode;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;

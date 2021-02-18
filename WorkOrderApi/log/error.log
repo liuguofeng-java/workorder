@@ -1,3 +1,8 @@
-2021-01-29 12:49:10.440 ERROR[http-nio-8888-exec-5] com.workorder.config.MyControllerAdvice : org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
-2021-01-29 12:51:32.493 ERROR[http-nio-8888-exec-2] com.workorder.config.MyControllerAdvice : org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
-2021-01-29 12:51:36.470 ERROR[http-nio-8888-exec-3] com.workorder.config.MyControllerAdvice : org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+2021-02-09 15:19:38.324 ERROR[http-nio-8888-exec-2] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常
+2021-02-09 15:42:37.028 ERROR[http-nio-8888-exec-2] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常
+2021-02-09 15:42:38.793 ERROR[http-nio-8888-exec-3] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常
+2021-02-09 15:42:39.373 ERROR[http-nio-8888-exec-10] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常
+2021-02-09 15:42:39.783 ERROR[http-nio-8888-exec-1] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常
+2021-02-09 15:48:52.015 ERROR[http-nio-8888-exec-6] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常
+2021-02-09 15:49:06.894 ERROR[http-nio-8888-exec-3] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常
+2021-02-09 15:55:07.794 ERROR[http-nio-8888-exec-7] com.workorder.config.MyControllerAdvice : java.lang.Exception: 异常

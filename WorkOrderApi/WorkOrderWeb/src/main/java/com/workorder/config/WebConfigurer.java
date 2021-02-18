@@ -11,9 +11,9 @@ public class WebConfigurer implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 拦截所有请求，通过判断是否有
-        registry.addInterceptor(LoginInterceptor())
+        /*registry.addInterceptor(new AdminInterceptor())
                 .addPathPatterns("/**")
-                .excludePathPatterns("/login/tokenLogin","/login/getVerifyCode");
+                .excludePathPatterns("/login/tokenLogin","/login/getVerifyCode");*/
     }
 
     @Bean

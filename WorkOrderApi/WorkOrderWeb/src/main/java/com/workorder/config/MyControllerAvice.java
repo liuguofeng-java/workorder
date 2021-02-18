@@ -1,6 +1,5 @@
 package com.workorder.config;
 
-
 import com.workorder.utils.result.JsonResult;
 import com.workorder.utils.result.ResultCode;
 import lombok.extern.log4j.Log4j2;
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @ControllerAdvice
 @Log4j2
-public class MyControllerAdvice {
+class MyControllerAdvice {
 
     /**
      * 全局异常捕捉处理
